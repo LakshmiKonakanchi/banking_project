@@ -1,0 +1,84 @@
+{
+  "summary": {
+    "dataset": "loans",
+    "total_checks": 9,
+    "passed": "9",
+    "failed": 0,
+    "critical_failures": 0,
+    "warnings": 0
+  },
+  "checks": [
+    {
+      "check_name": "column_exists",
+      "column": "loan_id",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'loan_id' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "customer_id",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'customer_id' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "principal",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'principal' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "interest_rate",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'interest_rate' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "unique",
+      "column": "loan_id",
+      "passed": "True",
+      "severity": "critical",
+      "detail": "0 duplicate values",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "foreign_key",
+      "column": "customer_id",
+      "passed": "True",
+      "severity": "critical",
+      "detail": "0 rows reference non-existent customers.customer_id",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "positive",
+      "column": "principal",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 non-positive values",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "in_range",
+      "column": "interest_rate",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 values outside [0, 40]",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "in_set",
+      "column": "status",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 values outside allowed set ['Active', 'Closed', 'Defaulted', 'Restructured']",
+      "n_failed": "0"
+    }
+  ]
+}

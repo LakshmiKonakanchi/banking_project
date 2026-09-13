@@ -1,0 +1,84 @@
+{
+  "summary": {
+    "dataset": "transactions",
+    "total_checks": 9,
+    "passed": "8",
+    "failed": 1,
+    "critical_failures": 1,
+    "warnings": 0
+  },
+  "checks": [
+    {
+      "check_name": "column_exists",
+      "column": "transaction_id",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'transaction_id' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "account_id",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'account_id' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "timestamp",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'timestamp' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "amount",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'amount' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "unique",
+      "column": "transaction_id",
+      "passed": "False",
+      "severity": "critical",
+      "detail": "960 duplicate values",
+      "n_failed": "960"
+    },
+    {
+      "check_name": "foreign_key",
+      "column": "account_id",
+      "passed": "True",
+      "severity": "critical",
+      "detail": "0 rows reference non-existent accounts.account_id",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "not_null",
+      "column": "amount",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "1,209 nulls (1.00%), threshold 2.00%",
+      "n_failed": "1209"
+    },
+    {
+      "check_name": "in_set",
+      "column": "txn_type",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 values outside allowed set ['Credit', 'Debit']",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "parseable_datetime",
+      "column": "timestamp",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 values could not be parsed as dates",
+      "n_failed": 0
+    }
+  ]
+}

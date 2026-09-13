@@ -1,0 +1,11 @@
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+matplotlib>=3.7
+seaborn>=0.12
+scipy>=1.10
+
+# Optional (used automatically if present, project runs fine without them):
+# pyarrow          # enables Parquet I/O instead of CSV for data/processed
+# pydantic         # stricter schema validation, not required by validation.py
+# sqlalchemy       # only needed if you swap SQLite for another RDBMS

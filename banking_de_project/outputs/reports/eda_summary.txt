@@ -1,0 +1,20 @@
+BANKING DATA WAREHOUSE — EDA SUMMARY REPORT
+==================================================
+
+Customers: 5,000
+  Avg age: 51.2  |  Avg income: R32,695
+  Avg credit score: 647
+
+Accounts: 6,988
+  Active: 6,432 (92.0%)
+
+Transactions: 119,799
+  Total volume: R57,553,936
+  Fraud rate: 0.564%  (676 flagged)
+  Avg transaction: R480.42  |  Median: R244.94
+  Top category by volume: Medical
+
+Loans: 2,500
+  Total principal outstanding: R137,582,585
+  Default rate: 8.8%
+  Avg interest rate: 16.51%

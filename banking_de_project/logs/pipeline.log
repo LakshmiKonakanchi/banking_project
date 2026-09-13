@@ -1,0 +1,19 @@
+2026-08-15 13:16:10,118 [INFO] =========== BANKING DATA PIPELINE START ===========
+2026-08-15 13:16:10,119 [INFO] --- STAGE START: generate_data ---
+2026-08-15 13:16:10,765 [INFO] --- STAGE DONE: generate_data (0.6s) ---
+2026-08-15 13:16:10,925 [INFO] --- STAGE START: validate ---
+2026-08-15 13:16:10,995 [INFO] --- STAGE DONE: validate (0.1s) ---
+2026-08-15 13:16:10,995 [WARNING] 3 critical validation failures found. Proceeding to cleaning stage (cleaning resolves known FK/duplicate issues). Use --force to suppress this message.
+2026-08-15 13:16:10,995 [INFO] --- STAGE START: clean ---
+2026-08-15 13:16:11,925 [INFO] --- STAGE DONE: clean (0.9s) ---
+2026-08-15 13:16:11,929 [INFO] --- STAGE START: model_warehouse ---
+2026-08-15 13:16:13,748 [INFO] --- STAGE DONE: model_warehouse (1.8s) ---
+2026-08-15 13:16:13,748 [INFO] --- STAGE START: eda ---
+2026-08-15 13:16:15,371 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-15 13:16:15,426 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-15 13:16:15,632 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-15 13:16:15,683 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-08-15 13:16:16,186 [INFO] --- STAGE DONE: eda (2.4s) ---
+2026-08-15 13:16:16,186 [INFO] --- STAGE START: ml ---
+2026-08-15 13:16:42,121 [INFO] --- STAGE DONE: ml (25.9s) ---
+2026-08-15 13:16:42,122 [INFO] =========== PIPELINE COMPLETE in 32.0s ===========

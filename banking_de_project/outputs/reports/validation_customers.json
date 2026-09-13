@@ -1,0 +1,124 @@
+{
+  "summary": {
+    "dataset": "customers",
+    "total_checks": 14,
+    "passed": "11",
+    "failed": 3,
+    "critical_failures": 1,
+    "warnings": 2
+  },
+  "checks": [
+    {
+      "check_name": "column_exists",
+      "column": "customer_id",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'customer_id' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "first_name",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'first_name' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "last_name",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'last_name' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "date_of_birth",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'date_of_birth' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "monthly_income",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'monthly_income' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "unique",
+      "column": "customer_id",
+      "passed": "False",
+      "severity": "critical",
+      "detail": "100 duplicate values",
+      "n_failed": "100"
+    },
+    {
+      "check_name": "not_null",
+      "column": "customer_id",
+      "passed": "True",
+      "severity": "critical",
+      "detail": "0 nulls (0.00%), threshold 0.00%",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "not_null",
+      "column": "monthly_income",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "151 nulls (2.96%), threshold 5.00%",
+      "n_failed": "151"
+    },
+    {
+      "check_name": "not_null",
+      "column": "credit_score",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "202 nulls (3.96%), threshold 6.00%",
+      "n_failed": "202"
+    },
+    {
+      "check_name": "in_range",
+      "column": "credit_score",
+      "passed": "False",
+      "severity": "warning",
+      "detail": "93 values outside [300, 850]",
+      "n_failed": "93"
+    },
+    {
+      "check_name": "positive",
+      "column": "monthly_income",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 non-positive values",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "parseable_datetime",
+      "column": "date_of_birth",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 values could not be parsed as dates",
+      "n_failed": 0
+    },
+    {
+      "check_name": "parseable_datetime",
+      "column": "signup_date",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 values could not be parsed as dates",
+      "n_failed": 0
+    },
+    {
+      "check_name": "no_full_row_duplicates",
+      "column": null,
+      "passed": "False",
+      "severity": "warning",
+      "detail": "82 exact duplicate rows",
+      "n_failed": "82"
+    }
+  ]
+}

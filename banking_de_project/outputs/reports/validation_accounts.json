@@ -1,0 +1,84 @@
+{
+  "summary": {
+    "dataset": "accounts",
+    "total_checks": 9,
+    "passed": "8",
+    "failed": 1,
+    "critical_failures": 1,
+    "warnings": 0
+  },
+  "checks": [
+    {
+      "check_name": "column_exists",
+      "column": "account_id",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'account_id' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "customer_id",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'customer_id' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "account_type",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'account_type' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "column_exists",
+      "column": "balance",
+      "passed": true,
+      "severity": "critical",
+      "detail": "'balance' present",
+      "n_failed": 0
+    },
+    {
+      "check_name": "unique",
+      "column": "account_id",
+      "passed": "True",
+      "severity": "critical",
+      "detail": "0 duplicate values",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "foreign_key",
+      "column": "customer_id",
+      "passed": "False",
+      "severity": "critical",
+      "detail": "12 rows reference non-existent customers.customer_id",
+      "n_failed": "12"
+    },
+    {
+      "check_name": "in_set",
+      "column": "account_type",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 values outside allowed set ['Business', 'Credit Card', 'Current', 'Fixed Deposit', 'Savings']",
+      "n_failed": "0"
+    },
+    {
+      "check_name": "not_null",
+      "column": "balance",
+      "passed": "True",
+      "severity": "warning",
+      "detail": "105 nulls (1.50%), threshold 2.00%",
+      "n_failed": "105"
+    },
+    {
+      "check_name": "no_full_row_duplicates",
+      "column": null,
+      "passed": "True",
+      "severity": "warning",
+      "detail": "0 exact duplicate rows",
+      "n_failed": "0"
+    }
+  ]
+}
